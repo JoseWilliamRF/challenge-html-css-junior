@@ -1,0 +1,107 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --cor-primaria: #a6ff00;
+  --cor-secundaria: #232129;
+  --cor-texto: #f4ede8;
+  --cor-fundo: #312e38;
+}
+body {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: var(--cor-fundo);
+}
+
+/* TELA DE LOGIN */
+main {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container-login {
+  border: 1px solid red;
+  width: 340px;
+  height: 503px;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.login h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.criarconta a {
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  transform: translateY(115px);
+  text-decoration: none;
+}
+
+input {
+  width: 340px;
+  height: 56px;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+/* imagem login */
+.input-img {
+  position: relative;
+  position: relative;
+  height: 56px;
+  margin-bottom: 0.5rem;
+}
+
+.input-email {
+  width: 100%;
+  position: relative;
+  padding-left: 50px;
+}
+.img-input {
+  position: relative;
+  width: 20px;
+  height: 18px;
+  opacity: 1;
+  bottom: 40px;
+  margin-left: 16px;
+}
+/* imagem passowrd */
+.input-password {
+  position: relative;
+  height: 56px;
+  margin-bottom: 1.5rem;
+}
+
+.input-pass {
+  width: 100%;
+  position: relative;
+  padding-left: 50px;
+}
+
+.img-password {
+  position: relative;
+  width: 20px;
+  height: 18px;
+  opacity: 1;
+  bottom: 40px;
+  margin-left: 16px;
+}
