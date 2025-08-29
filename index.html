@@ -18,46 +18,61 @@
   </head>
   <body>
     <main>
-      <div class="container-login">
-        <div class="login">
-          <h1>Faça seu Login</h1>
-          <form action="#" method="post">
-            <div class="input-img">
-              <input
-                class="input-email"
-                type="email"
-                name="f-email"
-                maxlength="30"
-                placeholder="E-mail"
-              />
-              <div class="img-input">
-                <img src="./assets/email-icon.svg" alt="" />
+      <div class="esquerdo">
+        <div class="container-login">
+          <span class="logotopo">
+            <img class="logotopo2" src="./assets/logo.png" alt="" />
+          </span>
+          <div class="retang"></div>
+          <div class="login">
+            <h1>Faça seu Login</h1>
+            <form action="#" method="post">
+              <div class="input-img">
+                <input
+                  class="input-email"
+                  type="email"
+                  name="f-email"
+                  maxlength="30"
+                  placeholder="E-mail"
+                />
+                <div class="img-input">
+                  <img src="./assets/email-icon.svg" alt="" />
+                </div>
               </div>
-            </div>
 
-            <div class="input-password">
-              <input
-                class="input-pass"
-                type="password"
-                name="f-pass"
-                maxlength="10"
-                placeholder="Senha"
-              />
+              <div class="input-password">
+                <input
+                  class="input-pass"
+                  type="password"
+                  name="f-pass"
+                  maxlength="10"
+                  placeholder="Senha"
+                />
 
-              <div class="img-password">
-                <img src="./assets/password-icon.svg" alt="" />
+                <div class="img-password">
+                  <img src="./assets/password-icon.svg" alt="" />
+                </div>
               </div>
-            </div>
 
-            <input class="enter" type="submit" value="Entrar" name="f-submit" />
-          </form>
+              <input
+                class="enter"
+                type="submit"
+                value="Entrar"
+                name="f-submit"
+              />
+            </form>
+            <p class="forgot">Esqueci minha Senha</p>
+          </div>
+          <div class="criarconta">
+            <a href="./register.html">
+              <img src="./assets/login-icon.svg" alt="" />
+              Criar Conta</a
+            >
+          </div>
         </div>
-        <div class="criarconta">
-          <a href="./register.html">
-            <img src="./assets/login-icon.svg" alt="" />
-            Criar Conta</a
-          >
-        </div>
+      </div>
+      <div class="direito">
+        <img src="./assets/background-login.png" alt="" />
       </div>
     </main>
   </body>

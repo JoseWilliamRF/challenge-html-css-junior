@@ -12,21 +12,59 @@
 }
 body {
   height: 100vh;
+  width: 100vw;
+  background-color: var(--cor-fundo);
   align-items: center;
   justify-content: center;
   display: flex;
-  background-color: var(--cor-fundo);
+  overflow: hidden;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* border: 1px solid blue; */
+  align-items: center;
+  justify-content: center;
+}
+
+.esquerdo {
+  /* border: 1px solid blue; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.direito {
+  /* border: 1px red solid; */
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+/* logo do topo */
+.logotopo {
+  position: absolute;
+}
+
+.logotopo2 {
+  display: flex;
+  position: relative;
+  transform: translateY(-17rem);
+}
+.retang {
+  width: 230px;
+  height: 4px;
+  background-color: var(--cor-primaria);
+  display: flex;
+  position: relative;
+  transform: translateY(-2.5rem);
 }
 
 /* TELA DE LOGIN */
-main {
-  border: 1px solid red;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 
 .container-login {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 340px;
   height: 503px;
   opacity: 1;
@@ -46,13 +84,14 @@ main {
   font-weight: 500;
   margin-bottom: 20px;
   font-size: 24px;
+  color: var(--cor-texto);
 }
 .criarconta a {
   display: flex;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
-  transform: translateY(115px);
+  transform: translateY(100px);
   text-decoration: none;
 }
 
@@ -61,11 +100,11 @@ input {
   height: 56px;
   opacity: 1;
   border-radius: 10px;
+  border: none;
 }
 
 /* imagem login */
 .input-img {
-  position: relative;
   position: relative;
   height: 56px;
   margin-bottom: 0.5rem;
@@ -75,6 +114,7 @@ input {
   width: 100%;
   position: relative;
   padding-left: 50px;
+  background-color: var(--cor-secundaria);
 }
 .img-input {
   position: relative;
@@ -95,6 +135,7 @@ input {
   width: 100%;
   position: relative;
   padding-left: 50px;
+  background-color: var(--cor-secundaria);
 }
 
 .img-password {
@@ -104,4 +145,47 @@ input {
   opacity: 1;
   bottom: 40px;
   margin-left: 16px;
+}
+.enter {
+  background-color: var(--cor-primaria);
+  font-weight: 500;
+}
+
+.forgot {
+  position: relative;
+  color: var(--cor-texto);
+  bottom: -1rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .direito {
+    display: none;
+  }
+  .login {
+    width: 295px;
+    height: 400px;
+  }
+  .container-login {
+    width: 295px;
+    height: 400px;
+  }
+
+  input {
+    width: 295px;
+    height: 50px;
+  }
+  .retang {
+    transform: translateY(-0.5rem);
+  }
+  .logotopo2 {
+    transform: translateY(-18rem);
+  }
 }
