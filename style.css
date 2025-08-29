@@ -103,6 +103,11 @@ input {
   border: none;
 }
 
+input:focus {
+  outline: none;
+  box-shadow: 2px 2px 10px rgba(166, 255, 0, 0.5);
+}
+
 /* imagem login */
 .input-img {
   position: relative;
