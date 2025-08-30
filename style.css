@@ -21,28 +21,27 @@ body {
   overflow: hidden;
 }
 
+/* Organização do Main em Direito e Esquerdo */
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* border: 1px solid blue; */
   align-items: center;
   justify-content: center;
 }
 
 .esquerdo {
-  /* border: 1px solid blue; */
   align-items: center;
   justify-content: center;
   display: flex;
 }
 
 .direito {
-  /* border: 1px red solid; */
   object-fit: cover;
   align-items: center;
   justify-content: center;
   display: flex;
 }
+
 /* logo do topo */
 .logotopo {
   position: absolute;
@@ -94,6 +93,8 @@ main {
   text-align: center;
   transform: translateY(100px);
   text-decoration: none;
+  width: 124px;
+  justify-content: space-between;
 }
 
 input {
@@ -121,6 +122,7 @@ input:focus {
   position: relative;
   padding-left: 50px;
   background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
 }
 .img-input {
   position: relative;
@@ -142,6 +144,7 @@ input:focus {
   position: relative;
   padding-left: 50px;
   background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
 }
 
 .img-password {
