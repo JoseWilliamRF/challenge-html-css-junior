@@ -1,0 +1,264 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --cor-primaria: #a6ff00;
+  --cor-secundaria: #232129;
+  --cor-texto: #f4ede8;
+  --cor-fundo: #312e38;
+  --cor-transicao: #15ff00;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--cor-fundo);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Organização do Main em Direito e Esquerdo */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.direito {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.esquerdo {
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* logo do topo */
+.logotopo {
+  position: absolute;
+}
+
+.logotopo2 {
+  display: flex;
+  position: relative;
+  transform: translateY(-17rem);
+}
+.retang {
+  width: 230px;
+  height: 4px;
+  background-color: var(--cor-primaria);
+  display: flex;
+  position: relative;
+  transform: translateY(-1rem);
+}
+
+/* TELA DE LOGIN */
+
+.container-login {
+  /* border: 1px solid red; */
+  width: 340px;
+  height: 431px;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-options {
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: var(--cor-texto);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-p {
+  position: relative;
+}
+.login-p::after {
+  content: ' ';
+  width: 0%;
+  height: 4px;
+  background-color: var(--cor-primaria);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.login-p:hover {
+  cursor: pointer;
+}
+.login-p:hover::after {
+  width: 100%;
+}
+.criarconta a {
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  transform: translateY(100px);
+  text-decoration: none;
+  width: 124px;
+  justify-content: space-between;
+}
+
+input {
+  width: 340px;
+  height: 56px;
+  opacity: 1;
+  border-radius: 10px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 2px 2px 10px rgba(166, 255, 0, 0.5);
+}
+
+/* imagem login */
+
+.img-user {
+  position: relative;
+  width: 20px;
+  height: 18px;
+  opacity: 1;
+  bottom: 40px;
+  margin-left: 16px;
+}
+
+.input-nome {
+  position: relative;
+  height: 56px;
+  margin-bottom: 0.5rem;
+}
+
+.input-img {
+  position: relative;
+  height: 56px;
+  margin-bottom: 0.5rem;
+}
+.input-nome2 {
+  width: 100%;
+  position: relative;
+  padding-left: 50px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+}
+
+.input-email {
+  width: 100%;
+  position: relative;
+  padding-left: 50px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+}
+.img-input {
+  position: relative;
+  width: 20px;
+  height: 18px;
+  opacity: 1;
+  bottom: 40px;
+  margin-left: 16px;
+}
+/* imagem passowrd */
+.input-password {
+  position: relative;
+  height: 56px;
+  margin-bottom: 1.5rem;
+}
+
+.input-pass {
+  width: 100%;
+  position: relative;
+  padding-left: 50px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+}
+
+.img-password {
+  position: relative;
+  width: 20px;
+  height: 18px;
+  opacity: 1;
+  bottom: 40px;
+  margin-left: 16px;
+}
+.enter {
+  background-color: var(--cor-primaria);
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+.enter:hover {
+  cursor: pointer;
+  background-color: var(--cor-transicao);
+}
+
+p.forgot {
+  position: relative;
+  color: var(--cor-texto);
+  bottom: -1rem;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .esquerdo {
+    display: none;
+  }
+  .login {
+    width: 295px;
+    height: 400px;
+  }
+
+  .login-p {
+    height: 1.5rem;
+  }
+
+  .login-options {
+    align-items: center;
+  }
+
+  .container-login {
+    width: 295px;
+    height: 400px;
+  }
+
+  input {
+    width: 295px;
+    height: 50px;
+  }
+  .retang {
+    transform: translateY(-0.5rem);
+  }
+  .logotopo2 {
+    transform: translateY(-18rem);
+  }
+}
